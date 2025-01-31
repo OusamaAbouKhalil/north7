@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connect with Us</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+    .container {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      max-width: 90%; /* Ensures it doesn't overflow on small screens */
+      width: auto; /* Makes the width adaptive to content */
+      display: inline-block; /* Ensures the container wraps the content */
+    }
+    h1 {
+      font-size: 1.8rem;
+      color: #333;
+      margin-bottom: 1.5rem;
+    }
+    .button {
+      display: block;
+      width: 100%;
+      padding: 1rem 2rem 1rem 1rem; /* Increased right padding */
+      margin: 0.5rem 0;
+      font-size: 1rem;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      text-align: left; /* Align text to the left */
+      transition: background-color 0.3s ease;
+      position: relative;
+      box-sizing: border-box; /* Ensures padding is included in the width */
+    }
+    .button.whatsapp {
+      background-color: #25d366;
+    }
+    .button.whatsapp:hover {
+      background-color: #1da851;
+    }
+    .button.instagram {
+      background-color: #e4405f;
+    }
+    .button.instagram:hover {
+      background-color: #c13584;
+    }
+    .button.instagram2 {
+      background-color: #833ab4;
+    }
+    .button.instagram2:hover {
+      background-color: #6a2a8e;
+    }
+    .footer {
+      margin-top: 1.5rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+    /* Optional: Add an icon to the right of the button */
+    .button::after {
+      content: "→";
+      position: absolute;
+      right: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Connect with Us</h1>
+    <a href="https://wa.me/81456065" class="button whatsapp">Chat on WhatsApp</a>
+    <a href="https://instagram.com/north7construction" class="button instagram">north7construction</a>
+    <a href="https://instagram.com/north7stone" class="button instagram2">north7stone</a>
+    <p class="footer">Scan the QR code to visit this page anytime!</p>
+  </div>
+</body>
+</html>
