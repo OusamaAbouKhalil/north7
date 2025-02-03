@@ -15,7 +15,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
       text-align: center;
     }
     h1 {
@@ -117,6 +117,22 @@
       }
       100% {
         opacity: 1;
+      }
+    }
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem; /* Smaller heading for mobile */
+      }
+      .button-row {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 1rem; /* Reduce gap between stacked buttons */
+      }
+      .button {
+        width: 100%; /* Full-width buttons on mobile */
+        max-width: 300px; /* Limit button width for better readability */
+        font-size: 1rem; /* Smaller font size for mobile */
+        padding: 1rem; /* Adjust padding for mobile */
       }
     }
   </style>
